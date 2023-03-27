@@ -12,7 +12,6 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "CreditAccount")
 public class CreditAccount extends Account {
     private BigDecimal creditLimit;
 }
