@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.1">
+
+    <mapped-superclass class="com.example.demo.Account">
+        <attributes>
+            <id name="id">
+                <generated-value strategy="AUTO"/>
+            </id>
+            <basic name="owner">
+                <column name="owner"/>
+            </basic>
+             <basic name="balance">
+                <column name="balance"/>
+            </basic>     
+             <basic name="interestRate">
+                <column name="interestRate"/>
+            </basic>                    
+        </attributes>
+    </mapped-superclass>
+</entity-mappings>
